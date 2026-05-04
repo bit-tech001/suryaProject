@@ -9,10 +9,10 @@ const GalleryPage = () => {
   const categories = ['All', 'Villas', 'Plots', 'Commercial'];
   const images = [
     { url: 'https://images.unsplash.com/photo-1773145513138-0d46d3cd4fbd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8SW5kdXN0cmlhbCUyMEVzdGF0ZSUyMFBsb3RzfGVufDB8fDB8fHww', title: 'Industrial Estate Plots', cat: 'Plots' },
-    { url: 'https://deaf-lavender-ifeu67ud5s.edgeone.app/surya.png', title: 'Surya Villas', cat: 'Villas' },
+    { url: 'https://managing-coral-egfelmy4to.edgeone.app/rs5.png', title: 'Surya Villas', cat: 'Villas' },
     { url: 'https://rival-plum-weeeawzjg7.edgeone.app/p2.png', title: ' Surya Square commercial project', cat: 'Commercial' },
     { url: 'https://powerful-amaranth-kdqlt2ebzj.edgeone.app/WhatsApp%20Image%202026-05-03%20at%204.03.07%20PM.jpeg', title: 'Office Hub Ulubari', cat: 'Commercial' },
-    { url: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd', title: ' Surya Green Estate Kaziranga', cat: 'Residential plots' },
+    { url: 'https://enthusiastic-amaranth-dbyqosy1bm.edgeone.app/rs.png', title: ' Surya Green Estate Kaziranga', cat: 'Residential plots' },
     { url: 'https://mass-coral-y99n0398d7.edgeone.app/967729da-a6b4-498f-a6d2-7b2da8690d4f.jpg', title: ' Balchand niwas Residential', cat: 'Residential ' },
     { url: 'https://shared-gray-vrqc1ifya6.edgeone.app/Screenshot%202026-05-03%20170738.png', title: 'Roodraksh Arham ', cat: 'Residential ' },
     { url: 'https://plus.unsplash.com/premium_photo-1775457876351-4191ee5e67a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fG5kdXN0cmlhbCUyMHBsb3RzJTIwYXZhaWxhYmxlfGVufDB8fDB8fHww', title: 'Kamalpur Industrial estate  ', cat: 'Industrial ' },
@@ -34,7 +34,7 @@ const GalleryPage = () => {
           className="text-center mb-16"
         >
           <div className="accent-line mx-auto mb-6" />
-          <h1 className="text-6xl font-display text-surya-charcoal mb-6 italic">Architecture <span className="text-surya-gold">Gallery</span></h1>
+          <h1 className="text-6xl font-display text-surya-charcoal mb-6 italic">The Works <span className="text-surya-gold">Gallery</span></h1>
           <div className="flex justify-center flex-wrap gap-8 text-[11px] uppercase tracking-[3px] font-bold text-surya-charcoal/50 mt-10">
             {categories.map(c => (
               <button key={c} className={`hover:text-surya-gold transition-colors cursor-pointer ${c === 'All' ? 'text-surya-gold' : ''}`}>{c}</button>

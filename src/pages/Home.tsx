@@ -85,7 +85,7 @@ const HomePage = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
                <div className="pt-12">
-                 <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=600" className="rounded-sm shadow-xl" alt="Plot" />
+                 <img src="https://logical-plum-ex1obnmdpz.edgeone.app/rs4.png" className="rounded-sm shadow-xl" alt="Plot" />
                </div>
                <div>
                   <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=600" className="rounded-sm shadow-xl" alt="Villa" />
@@ -111,7 +111,7 @@ const HomePage = () => {
                 <div className="bg-surya-charcoal p-8 text-white">
                   <p className="text-sm font-light italic">"Architecting the future of Guwahati with sustainable and modern benchmarks."</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" className="w-full aspect-[4/5] object-cover rounded shadow-2xl" alt="About 2" />
+                <img src="https://uptight-amaranth-dx7ivh2smp.edgeone.app/rs1.png" className="w-full aspect-[4/5] object-cover rounded shadow-2xl" alt="About 2" />
               </div>
             </div>
             <div className="lg:col-span-5">
@@ -166,8 +166,8 @@ const HomePage = () => {
             </div>
             <div className="space-y-8">
               {[
-                { name: 'Tanisha Jain', text: 'Very trustworthy company. They handled my plot registration with absolute transparency and ease.' },
-                { name: 'Mehul Jain', text: 'Premium service and professional team. The quality of finishing in their villas is unmatched in Guwahati.' }
+                { name: 'Govind Agarwal', text: 'Very trustworthy company. They handled my plot registration with absolute transparency and ease.' },
+                { name: 'Mukesh Jain', text: 'Premium service and professional team. The quality of finishing in their villas is unmatched in Guwahati.' }
               ].map((t, i) => (
                 <div key={i} className="p-10 border border-white/10 bg-white/5 backdrop-blur-sm">
                   <p className="italic text-lg mb-6">"{t.text}"</p>
@@ -265,8 +265,8 @@ const HomePage = () => {
                   >
                     <option>Plot Inquiry</option>
                     <option>Villa Construction</option>
-                    <option>Investment Advisory</option>
-                    <option>Interior Styling</option>
+                    <option>Property Investment </option>
+              
                   </select>
                 </div>
                 <button 
@@ -289,8 +289,8 @@ const HomePage = () => {
          <div className="max-w-7xl mx-auto px-6 text-center">
            <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
              {[
-               { label: 'Completed', value: '50+' },
-               { label: 'Happy Families', value: '200+' },
+               { label: 'Completed', value: '15+' },
+               { label: 'Happy Families', value: '15+' },
                { label: 'Years Exp', value: '10+' },
                { label: 'City Hubs', value: '5+' },
              ].map((stat, i) => (

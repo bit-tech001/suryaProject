@@ -105,8 +105,8 @@ const ContactPage = () => {
                     className="w-full border-b border-surya-border pb-3 text-sm focus:outline-none focus:border-surya-gold transition-colors bg-transparent appearance-none"
                   >
                     <option>Plot Inquiry</option>
-                    <option>Villa Construction</option>
-                    <option>Investment Advisory</option>
+                    <option>Villa Inquiry</option>
+                    <option>Property Investment </option>
                   </select>
                 </div>
                 <div>
@@ -136,11 +136,9 @@ const ContactPage = () => {
             <div className="accent-line mx-auto" />
             <h2 className="text-4xl font-display text-surya-charcoal italic mt-4">Common <span className="text-surya-gold">Inquiries</span></h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x- 20 gap-y-12">
             {[
-              { q: 'Are your plots RERA approved?', a: 'Yes, all our residential projects and plots strictly adhere to RERA regulations and local Guwahati development authority norms.' },
-              { q: 'Do you offer home loan assistance?', a: 'We have partnerships with leading banks to provide seamless home loan services and financial planning for our clients.' },
-              { q: 'What is the average construction timeline?', a: 'For independent villas, the average construction time is 12-18 months depending on the design complexity and scale.' },
+             
               { q: 'Can I visit the project site?', a: 'Absolutely. We encourage private site visits. Please book a consultation to schedule a guided walkthrough.' }
             ].map((faq, i) => (
               <div key={i} className="border-b border-surya-border pb-8">

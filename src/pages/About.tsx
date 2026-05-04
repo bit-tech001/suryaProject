@@ -42,8 +42,8 @@ const AboutPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
           {[
-            { icon: <Users size={32} />, title: '200+ Clients', desc: 'Trusting us for their dream projects' },
-            { icon: <Building2 size={32} />, title: '50+ Projects', desc: 'Completed across Assam' },
+            { icon: <Users size={32} />, title: '15+ Clients', desc: 'Trusting us for their dream projects' },
+            { icon: <Building2 size={32} />, title: '15+ Projects', desc: 'Completed across Assam' },
             { icon: <Rocket size={32} />, title: '10 Years', desc: 'Of architectural innovation' },
             { icon: <ShieldCheck size={32} />, title: 'Verified', desc: 'Transparent legal documentation' },
           ].map((stat, i) => (
