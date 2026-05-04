@@ -311,7 +311,7 @@ const HomePage = () => {
            <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
              {[
                { label: 'Completed', value: '15+' },
-               { label: 'Happy Families', value: '15+' },
+               { label: 'Happy Clients', value: '200+' },
                { label: 'Years Exp', value: '10+' },
                { label: 'City Hubs', value: '5+' },
              ].map((stat, i) => (
