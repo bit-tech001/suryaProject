@@ -57,7 +57,7 @@ const HomePage = () => {
             className="absolute inset-0"
           >
             <img 
-              src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=2000" 
+              src="https://bewildered-salmon-055atfkxge.edgeone.app/hero.jpeg" 
               alt="Luxury Architecture" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -165,6 +165,10 @@ const HomePage = () => {
               </p>
             </div>
             <div className="space-y-8">
+              <div className="mb-6">
+                <div className="w-8 h-px bg-surya-gold/30 mb-4" />
+                <h3 className="text-surya-gold text-[20px] uppercase tracking-[4px] font-bold">Happy Customer Reviews</h3>
+              </div>
               {[
                 { name: 'Govind Agarwal', text: 'Very trustworthy company. They handled my plot registration with absolute transparency and ease.' },
                 { name: 'Mukesh Jain', text: 'Premium service and professional team. The quality of finishing in their villas is unmatched in Guwahati.' }
@@ -197,22 +201,22 @@ const HomePage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="lg:col-span-2 row-span-2 relative group overflow-hidden">
-               <img src="https://mass-coral-y99n0398d7.edgeone.app/967729da-a6b4-498f-a6d2-7b2da8690d4f.jpg" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Featured 1" />
+               <img src="https://mass-coral-y99n0398d7.edgeone.app/967729da-a6b4-498f-a6d2-7b2da8690d4f.jpg" className="w-full h-full object-cover  transition-all duration-700" alt="Featured 1" />
                <div className="absolute inset-0 bg-surya-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                  <span className="text-white text-[10px] uppercase tracking-[4px] font-bold border border-white/40 px-6 py-3">View Detail</span>
                </div>
             </div>
             <div className="relative group overflow-hidden">
-               <img src="https://powerful-amaranth-kdqlt2ebzj.edgeone.app/WhatsApp%20Image%202026-05-03%20at%204.03.07%20PM.jpeg" className="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Featured 2" />
+               <img src="https://powerful-amaranth-kdqlt2ebzj.edgeone.app/WhatsApp%20Image%202026-05-03%20at%204.03.07%20PM.jpeg" className="w-full h-80 object-cover  transition-all duration-700" alt="Featured 2" />
             </div>
             <div className="relative group overflow-hidden">
-               <img src="https://shared-gray-vrqc1ifya6.edgeone.app/Screenshot%202026-05-03%20170738.png" className="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Featured 3" />
+               <img src="https://shared-gray-vrqc1ifya6.edgeone.app/Screenshot%202026-05-03%20170738.png" className="w-full h-80 object-cover  transition-all duration-700" alt="Featured 3" />
             </div>
             <div className="relative group overflow-hidden">
-               <img src="https://rival-plum-weeeawzjg7.edgeone.app/p2.png" className="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Featured 4" />
+               <img src="https://rival-plum-weeeawzjg7.edgeone.app/p2.png" className="w-full h-80 object-cover  transition-all duration-700" alt="Featured 4" />
             </div>
             <div className="relative group overflow-hidden">
-               <img src="https://deaf-lavender-ifeu67ud5s.edgeone.app/surya.png" className="w-full h-80 object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Featured 5" />
+               <img src="https://deaf-lavender-ifeu67ud5s.edgeone.app/surya.png" className="w-full h-80 object-cover  transition-all duration-700" alt="Featured 5" />
             </div>
           </div>
         </div>

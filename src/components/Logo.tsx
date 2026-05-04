@@ -14,7 +14,7 @@ const Logo: React.FC<LogoProps> = ({ className = '', variant = 'dark' }) => {
       <img 
         src="https://screeching-amber-4gdctlze8j.edgeone.app/Screenshot%202026-05-03%20162933.png" 
         alt="Surya Developers Logo"
-        className="w-20 h-20 object-contain shrink-0 radius-50"
+        className="w-15 h-15 object-contain shrink-0 radius-50"
       />
       <div className="flex flex-col">
         <span className="font-display text-xl font-bold tracking-[3px] uppercase leading-none  text-surya-gold" >

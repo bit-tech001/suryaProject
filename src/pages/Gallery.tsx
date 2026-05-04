@@ -49,26 +49,28 @@ const GalleryPage = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="relative group bg-white p-2 border border-surya-border shadow-xl transition-all duration-500 overflow-hidden"
+              className="break-inside-avoid relative group bg-white p-2 border border-surya-border shadow-xl transition-all duration-500 overflow-hidden"
             >
-              <img 
-                src={img.url.startsWith('http') && img.url.includes('unsplash') ? `${img.url}?auto=format&fit=crop&q=80&w=800` : img.url} 
-                alt={img.title} 
-                className="w-full transition-all duration-700" 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-surya-charcoal/90 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center items-center p-8 text-center">
-                <span className="text-[10px] uppercase tracking-[3px] text-surya-gold mb-2">{img.cat}</span>
-                <h3 className="text-2xl font-display italic text-white mb-6">{img.title}</h3>
+              <div className="overflow-hidden bg-surya-cream">
+                <img 
+                  src={img.url.startsWith('http') && img.url.includes('unsplash') ? `${img.url}?auto=format&fit=crop&q=80&w=800` : img.url} 
+                  alt={img.title} 
+                  className="w-full transition-all duration-700 hover:scale-105" 
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div className="p-6 text-center">
+                <span className="text-[9px] uppercase tracking-[3px] text-surya-gold mb-2 block font-bold">{img.cat}</span>
+                <h3 className="text-xl font-display italic text-surya-charcoal mb-6 min-h-[3.5rem] flex items-center justify-center">
+                  {img.title}
+                </h3>
                 
                 <button 
                   onClick={() => setSelectedProject(img.title)}
-                  className="bg-surya-gold text-white px-8 py-3 text-[10px] uppercase tracking-[2px] font-bold hover:brightness-110 transition-all"
+                  className="w-full bg-surya-gold text-white px-8 py-3 text-[10px] uppercase tracking-[2px] font-bold hover:bg-surya-charcoal transition-all shadow-lg"
                 >
                   Book Now
                 </button>
-                
-                <div className="w-10 h-0.5 bg-surya-gold mt-6 transform translate-y-4 group-hover:translate-y-0 transition-transform" />
               </div>
             </motion.div>
           ))}
