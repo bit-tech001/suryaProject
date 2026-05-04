@@ -201,22 +201,39 @@ const HomePage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="lg:col-span-2 row-span-2 relative group overflow-hidden">
-               <img src="https://mass-coral-y99n0398d7.edgeone.app/967729da-a6b4-498f-a6d2-7b2da8690d4f.jpg" className="w-full h-full object-cover  transition-all duration-700" alt="Featured 1" />
-               <div className="absolute inset-0 bg-surya-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                 <span className="text-white text-[10px] uppercase tracking-[4px] font-bold border border-white/40 px-6 py-3">View Detail</span>
+               <img src="https://managing-coral-egfelmy4to.edgeone.app/rs5.png" className="w-full h-full object-cover  transition-all duration-700" alt="Surya Villas" />
+               <div className="absolute inset-0 bg-surya-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-8 text-center">
+                 <span className="text-white text-[10px] uppercase tracking-[4px] font-bold border border-white/40 px-6 py-3 mb-4">View Detail</span>
+                 <h3 className="text-white font-display italic text-2xl">Surya Villas</h3>
                </div>
             </div>
             <div className="relative group overflow-hidden">
-               <img src="https://powerful-amaranth-kdqlt2ebzj.edgeone.app/WhatsApp%20Image%202026-05-03%20at%204.03.07%20PM.jpeg" className="w-full h-80 object-cover  transition-all duration-700" alt="Featured 2" />
+               <img src="https://rival-plum-weeeawzjg7.edgeone.app/p2.png" className="w-full h-80 object-cover  transition-all duration-700" alt="Surya Square" />
+               <div className="absolute inset-0 bg-surya-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4 text-center">
+                 <h3 className="text-white font-display italic text-lg line-clamp-1">Surya Square</h3>
+                 <span className="text-surya-gold text-[8px] uppercase tracking-widest mt-1">Commercial Project</span>
+               </div>
             </div>
             <div className="relative group overflow-hidden">
-               <img src="https://shared-gray-vrqc1ifya6.edgeone.app/Screenshot%202026-05-03%20170738.png" className="w-full h-80 object-cover  transition-all duration-700" alt="Featured 3" />
+               <img src="https://shared-gray-vrqc1ifya6.edgeone.app/Screenshot%202026-05-03%20170738.png" className="w-full h-80 object-cover  transition-all duration-700" alt="Roodraksh Arham" />
+               <div className="absolute inset-0 bg-surya-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4 text-center">
+                 <h3 className="text-white font-display italic text-lg line-clamp-1">Roodraksh Arham</h3>
+                 <span className="text-surya-gold text-[8px] uppercase tracking-widest mt-1">Residential Flats</span>
+               </div>
             </div>
             <div className="relative group overflow-hidden">
-               <img src="https://rival-plum-weeeawzjg7.edgeone.app/p2.png" className="w-full h-80 object-cover  transition-all duration-700" alt="Featured 4" />
+               <img src="https://enthusiastic-amaranth-dbyqosy1bm.edgeone.app/rs.png" className="w-full h-80 object-cover  transition-all duration-700" alt="Surya Green Estate" />
+               <div className="absolute inset-0 bg-surya-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4 text-center">
+                 <h3 className="text-white font-display italic text-lg line-clamp-1">Surya Green Estate</h3>
+                 <span className="text-surya-gold text-[8px] uppercase tracking-widest mt-1">Land Plotting</span>
+               </div>
             </div>
             <div className="relative group overflow-hidden">
-               <img src="https://deaf-lavender-ifeu67ud5s.edgeone.app/surya.png" className="w-full h-80 object-cover  transition-all duration-700" alt="Featured 5" />
+               <img src="https://mass-coral-y99n0398d7.edgeone.app/967729da-a6b4-498f-a6d2-7b2da8690d4f.jpg" className="w-full h-80 object-cover  transition-all duration-700" alt="Balchand Niwas" />
+               <div className="absolute inset-0 bg-surya-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4 text-center">
+                 <h3 className="text-white font-display italic text-lg line-clamp-1">Balchand Niwas</h3>
+                 <span className="text-surya-gold text-[8px] uppercase tracking-widest mt-1">Residential Building</span>
+               </div>
             </div>
           </div>
         </div>

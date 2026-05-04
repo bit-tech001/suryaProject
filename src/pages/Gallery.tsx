@@ -8,14 +8,48 @@ const GalleryPage = () => {
 
   const categories = ['All', 'Villas', 'Plots', 'Commercial'];
   const images = [
-    { url: 'https://images.unsplash.com/photo-1773145513138-0d46d3cd4fbd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8SW5kdXN0cmlhbCUyMEVzdGF0ZSUyMFBsb3RzfGVufDB8fDB8fHww', title: 'Industrial Estate Plots', cat: 'Plots' },
-    { url: 'https://managing-coral-egfelmy4to.edgeone.app/rs5.png', title: 'Surya Villas', cat: 'Villas' },
-    { url: 'https://rival-plum-weeeawzjg7.edgeone.app/p2.png', title: ' Surya Square commercial project', cat: 'Commercial' },
-    { url: 'https://powerful-amaranth-kdqlt2ebzj.edgeone.app/WhatsApp%20Image%202026-05-03%20at%204.03.07%20PM.jpeg', title: 'Office Hub Ulubari', cat: 'Commercial' },
-    { url: 'https://enthusiastic-amaranth-dbyqosy1bm.edgeone.app/rs.png', title: ' Surya Green Estate Kaziranga', cat: 'Residential plots' },
-    { url: 'https://mass-coral-y99n0398d7.edgeone.app/967729da-a6b4-498f-a6d2-7b2da8690d4f.jpg', title: ' Balchand niwas Residential', cat: 'Residential ' },
-    { url: 'https://shared-gray-vrqc1ifya6.edgeone.app/Screenshot%202026-05-03%20170738.png', title: 'Roodraksh Arham ', cat: 'Residential ' },
-    { url: 'https://plus.unsplash.com/premium_photo-1775457876351-4191ee5e67a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fG5kdXN0cmlhbCUyMHBsb3RzJTIwYXZhaWxhYmxlfGVufDB8fDB8fHww', title: 'Kamalpur Industrial estate  ', cat: 'Industrial ' },
+    { 
+      url: 'https://homeless-ivory-nbh9boa5za.edgeone.app/radiksh.jpeg', 
+      title: 'Roodraksh Arham', 
+      location: 'Bijoynagar',
+      cat: 'Residential',
+      details: 'Premium flats @ ₹3800/sqft. Possession: 2026'
+    },
+    { 
+      url: 'https://reasonable-sapphire-v7upkxxsaa.edgeone.app/cg3.png', 
+      title: 'Surya Villas', 
+      location: 'Sonapur, Guwahati',
+      cat: 'Villas',
+      details: 'Luxury villas @ ₹5600/sqft. Possession: 2027'
+    },
+    { 
+      url: 'https://interior-peach-yerq68avkh.edgeone.app/ch4.jpg', 
+      title: 'Surya Green Estate Kaziranga', 
+      location: 'Kaziranga',
+      cat: 'Plots',
+      details: 'Residential plots @ ₹16 Lakhs/katha. Possession: 2027'
+    },
+    { 
+      url: 'https://variable-lavender-j7pfx5258v.edgeone.app/ch1.png', 
+      title: 'Surya Square', 
+      location: 'Mirza Road, Bijoynagar',
+      cat: 'Commercial',
+      details: 'G+4 Commercial building, delivered in 2022'
+    },
+    { 
+      url: 'https://mass-coral-y99n0398d7.edgeone.app/967729da-a6b4-498f-a6d2-7b2da8690d4f.jpg', 
+      title: 'Balchand Niwas', 
+      location: 'Bijoynagar',
+      cat: 'Residential',
+      details: 'Delivered G+5 Residential project (2020)'
+    },
+    { 
+      url: 'https://misleading-green-bzokvppncr.edgeone.app/kamalpur.jpeg', 
+      title: 'Kamalpur Industrial Estate', 
+      location: 'North Guwahati',
+      cat: 'Plots',
+      details: 'Industrial plots available. Possession: 2026'
+    }
   ];
 
   const handleBooking = (e: React.FormEvent) => {
@@ -34,7 +68,7 @@ const GalleryPage = () => {
           className="text-center mb-16"
         >
           <div className="accent-line mx-auto mb-6" />
-          <h1 className="text-6xl font-display text-surya-charcoal mb-6 italic">The Works <span className="text-surya-gold">Gallery</span></h1>
+          <h1 className="text-6xl font-display text-surya-charcoal mb-6 italic">Featured <span className="text-surya-gold">Projects</span></h1>
           <div className="flex justify-center flex-wrap gap-8 text-[11px] uppercase tracking-[3px] font-bold text-surya-charcoal/50 mt-10">
             {categories.map(c => (
               <button key={c} className={`hover:text-surya-gold transition-colors cursor-pointer ${c === 'All' ? 'text-surya-gold' : ''}`}>{c}</button>
@@ -60,16 +94,20 @@ const GalleryPage = () => {
                 />
               </div>
               <div className="p-6 text-center">
-                <span className="text-[9px] uppercase tracking-[3px] text-surya-gold mb-2 block font-bold">{img.cat}</span>
-                <h3 className="text-xl font-display italic text-surya-charcoal mb-6 min-h-[3.5rem] flex items-center justify-center">
+                <span className="text-[9px] uppercase tracking-[3px] text-surya-gold mb-1 block font-bold">{img.cat}</span>
+                <span className="text-[10px] uppercase tracking-[1px] text-surya-charcoal/40 mb-3 block font-medium">{img.location}</span>
+                <h3 className="text-xl font-display italic text-surya-charcoal mb-2">
                   {img.title}
                 </h3>
+                <p className="text-[11px] text-surya-charcoal/60 mb-6 font-medium tracking-wide leading-relaxed">
+                  {img.details}
+                </p>
                 
                 <button 
                   onClick={() => setSelectedProject(img.title)}
                   className="w-full bg-surya-gold text-white px-8 py-3 text-[10px] uppercase tracking-[2px] font-bold hover:bg-surya-charcoal transition-all shadow-lg"
                 >
-                  Book Now
+                  Book Consultation
                 </button>
               </div>
             </motion.div>
